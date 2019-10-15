@@ -1,22 +1,12 @@
-import React from 'react';
+import Layout from '../components/layout/layout';
 
-class Home extends React.Component {
+const imageStyle = {
+    width: '25vh',
+};
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            members: [],
-        }
-    }
+const Index = () => <Layout>
+    <h3>Split</h3>
+    <img src="./images/view.jpg" style={imageStyle} />
+</Layout>
 
-
-
-    render() {
-        <div>
-            <h3>Welcome to Next.js!</h3>
-            <img src="/view.jpg" alt="image" style={{ width: '25vw' }} />
-        </div>
-    }
-}
-
-export default Home
+export default Index
